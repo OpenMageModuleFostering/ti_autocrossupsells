@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ti_Autocrossupsells</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>GNU General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>It will do the automatic cross-sell and up-sell functionality with category filter. &#xD;
+Its working like who bought this also bought concept. </summary>
+    <description>Adds the cross sell &amp; up sell functionality in each order with its products  .&#xD;
+Also we have an optional field for categories based filter.&#xD;
+If a customer purchases X and Y,. After successful order, X will be added as a cross-sell or up-sell product of Y and vice versa. </description>
+    <notes>First Stable Release</notes>
+    <authors><author><name>Ti Technologies</name><user>titech</user><email>info@titechnologies.in</email></author></authors>
+    <date>2013-01-17</date>
+    <time>12:09:34</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Ti_Autocrossupsells.xml" hash="d9f6e6ba22e37d3be394a129afad530b"/></dir></target><target name="magecommunity"><dir name="Ti"><dir name="Autocrossupsells"><dir name="Helper"><file name="Data.php" hash="8989cf5ba545d9070e195aec7eb3e5b8"/></dir><dir name="controllers"><dir name="Checkout"><file name="OnepageController.php" hash="bd82c452e3d4220a7d1e1aee14b6589e"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="8141acc2647b074fea0e7fe0b7951e97"/><file name="config.xml" hash="87f9724ce0d1d16cb46d1f4d96e94337"/><file name="system.xml" hash="a49b24e5a4c4090b3599fbe4536bc8d7"/></dir></dir></dir></target><target name="magelocale"><dir name="de_DE"><file name="Ti_Autocrossupsells.csv" hash="ed3608e8799b33c1db80468d9450f14c"/></dir><dir name="en_US"><file name="Ti_Autocrossupsells.csv" hash="d3b37dcd22e09273d4e1e6677b38b375"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

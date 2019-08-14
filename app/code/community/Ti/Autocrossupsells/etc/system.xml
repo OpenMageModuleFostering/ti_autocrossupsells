@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <titechextension translate="label" module="ti_autocrossupsells">
+            <label>Ti Tech Extensions</label>
+            <sort_order>100</sort_order>
+        </titechextension>
+    </tabs>
+   <sections>
+        <autocrossupsells translate="label" module="ti_autocrossupsells">
+            <label>Automatic cross-sells and upsell</label>
+            <tab>titechextension</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <autocrossupsellssettings translate="label" module="ti_autocrossupsells">
+                    <label>Configurations</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_action translate="label, comment">
+                                <label>Automatic cross-sell and upsell module</label>
+                                <comment><![CDATA[select yes to enable automatic cross-sell and upsell module]]></comment>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </enable_action>
+                        <enable_crossell translate="label, comment">
+                                <label>cross-sell settings</label>
+                                <comment><![CDATA[select yes to enable automatic cross-sells action]]></comment>
+                                <depends><enable_action>1</enable_action></depends>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>2</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </enable_crossell>
+                        <enable_upsell translate="label, comment">
+                                <label>up-sell settings</label>
+                                <comment><![CDATA[select yes to enable automatic up-sell action]]></comment>
+                                <depends><enable_action>1</enable_action></depends>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>3</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </enable_upsell>
+                        <category_filter translate="label, comment">
+                                <label>Category Filter</label>
+                                <comment><![CDATA[select yes to enable category filter in automatic cross-sells & Up sells]]></comment>
+                                <depends><enable_action>1</enable_action></depends>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>4</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                        </category_filter>
+                    </fields>
+                </autocrossupsellssettings>
+            </groups>
+        </autocrossupsells>
+    </sections>
+</config>

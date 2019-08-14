@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Ti_Autocrossupsells>
+            <version>1.0.1</version>
+        </Ti_Autocrossupsells>
+    </modules>
+        <global>
+            <helpers>
+                    <ti_autocrossupsells>
+                        <class>Ti_Autocrossupsells_Helper</class>
+                    </ti_autocrossupsells>
+                </helpers>
+        </global>
+        <frontend>
+          <routers>
+            <checkout>
+              <args>
+                <modules>
+                  <Ti_Autocrossupsells before="Mage_Checkout">Ti_Autocrossupsells_Checkout</Ti_Autocrossupsells>
+                </modules>
+              </args>
+            </checkout>
+          </routers>
+    </frontend>
+     <adminhtml>
+        <translate>
+            <modules>
+                <Ti_Autocrossupsells>
+                    <files>
+                        <default>Ti_Autocrossupsells.csv</default>
+                    </files>
+                </Ti_Autocrossupsells>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
