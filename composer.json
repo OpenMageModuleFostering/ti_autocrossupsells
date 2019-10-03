@@ -1,17 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/Ti_Autocrossupsells",
-    "type": "magento-module",
-    "license": "GNU-General-Public-License-(GPL)",
-    "homepage": "",
-    "description": "It will do the automatic cross-sell and up-sell functionality with category filter. 
-Its working like who bought this also bought concept. ",
-    "authors": [
-    {
-        "name": "Ti Technologies",
-        "email": "info@titechnologies.in"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
